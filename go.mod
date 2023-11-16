@@ -6,7 +6,7 @@ require (
 	github.com/frankban/quicktest v1.14.4
 	github.com/google/go-cmp v0.5.9
 	github.com/google/uuid v1.3.0
-	github.com/gorilla/mux v1.8.0
+	github.com/gorilla/mux v1.8.1
 	github.com/jackc/pgconn v1.14.1
 	github.com/jackc/pgx/v4 v4.18.1
 	github.com/jackc/puddle v1.3.0
