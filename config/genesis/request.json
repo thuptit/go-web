@@ -1,0 +1,269 @@
+{
+    "user": {
+        "provider": "google",
+        "token": "REPLACE_ME"
+    },
+    "org": {
+        "name": "Movie Makers Unlimited",
+        "description": "An organization dedicated to creating movies in a demo app.",
+        "kind": "standard",
+        "app": {
+            "name": "Movie Makers App",
+            "description": "The first app dedicated to creating movies in a demo app.",
+            "oauth2_provider": "google",
+            "oauth2_provider_client_id": "REPLACE_ME"
+        }
+    },
+    "permissions": [
+        {
+            "resource": "/api/v1/ping",
+            "operation": "GET",
+            "description": "allows for calling the ping service to determine if system is up and running",
+            "active": true
+        },
+        {
+            "resource": "/api/v1/logger",
+            "operation": "GET",
+            "description": "allows for reading the logger state",
+            "active": true
+        },
+        {
+            "resource": "/api/v1/logger",
+            "operation": "PUT",
+            "description": "allows for updating the logger state",
+            "active": true
+        },
+        {
+            "resource": "/api/v1/orgs",
+            "operation": "POST",
+            "description": "allows for creating an organization",
+            "active": true
+        },
+        {
+            "resource": "/api/v1/orgs",
+            "operation": "PUT",
+            "description": "allows for updating an organization",
+            "active": true
+        },
+        {
+            "resource": "/api/v1/orgs",
+            "operation": "DELETE",
+            "description": "allows for deleting an organization",
+            "active": true
+        },
+        {
+            "resource": "/api/v1/orgs",
+            "operation": "GET",
+            "description": "allows for finding all organizations",
+            "active": true
+        },
+        {
+            "resource": "/api/v1/orgs/{extlID}",
+            "operation": "GET",
+            "description": "allows for finding an organization by external ID",
+            "active": true
+        },
+        {
+            "resource": "/api/v1/apps",
+            "operation": "POST",
+            "description": "allows for creating an app",
+            "active": true
+        },
+        {
+            "resource": "/api/v1/permissions",
+            "operation": "POST",
+            "description": "allows for creating a permission",
+            "active": true
+        },
+        {
+            "resource": "/api/v1/permissions",
+            "operation": "GET",
+            "description": "allows for finding all permissions",
+            "active": true
+        },
+        {
+            "resource": "/api/v1/permissions",
+            "operation": "DELETE",
+            "description": "allows for deleting a permission",
+            "active": true
+        },
+        {
+            "resource": "/api/v1/movies",
+            "operation": "POST",
+            "description": "allows for creating a movie",
+            "active": true
+        },
+        {
+            "resource": "/api/v1/movies/{extlID}",
+            "operation": "PUT",
+            "description": "allows for updating a movie",
+            "active": true
+        },
+        {
+            "resource": "/api/v1/movies/{extlID}",
+            "operation": "DELETE",
+            "description": "allows for deleting a movie",
+            "active": true
+        },
+        {
+            "resource": "/api/v1/movies/{extlID}",
+            "operation": "GET",
+            "description": "allows for finding a unique movie",
+            "active": true
+        },
+        {
+            "resource": "/api/v1/movies",
+            "operation": "GET",
+            "description": "allows for finding all movies",
+            "active": true
+        }
+    ],
+    "roles": [
+        {
+            "role_cd": "sysAdmin",
+            "role_description": "System administrator role.",
+            "active": true,
+            "permissions": [
+                {
+                    "resource": "/api/v1/ping",
+                    "operation": "GET",
+                    "description": "allows for calling the ping service to determine if system is up and running",
+                    "active": true
+                },
+                {
+                    "resource": "/api/v1/logger",
+                    "operation": "GET",
+                    "description": "allows for reading the logger state",
+                    "active": true
+                },
+                {
+                    "resource": "/api/v1/logger",
+                    "operation": "PUT",
+                    "description": "allows for updating the logger state",
+                    "active": true
+                },
+                {
+                    "resource": "/api/v1/orgs",
+                    "operation": "POST",
+                    "description": "allows for creating an organization",
+                    "active": true
+                },
+                {
+                    "resource": "/api/v1/orgs",
+                    "operation": "PUT",
+                    "description": "allows for updating an organization",
+                    "active": true
+                },
+                {
+                    "resource": "/api/v1/orgs",
+                    "operation": "DELETE",
+                    "description": "allows for deleting an organization",
+                    "active": true
+                },
+                {
+                    "resource": "/api/v1/orgs",
+                    "operation": "GET",
+                    "description": "allows for finding all organizations",
+                    "active": true
+                },
+                {
+                    "resource": "/api/v1/orgs/{extlID}",
+                    "operation": "GET",
+                    "description": "allows for finding an organization by external ID",
+                    "active": true
+                },
+                {
+                    "resource": "/api/v1/apps",
+                    "operation": "POST",
+                    "description": "allows for creating an app",
+                    "active": true
+                },
+                {
+                    "resource": "/api/v1/permissions",
+                    "operation": "POST",
+                    "description": "allows for creating a permission",
+                    "active": true
+                },
+                {
+                    "resource": "/api/v1/permissions",
+                    "operation": "GET",
+                    "description": "allows for finding all permissions",
+                    "active": true
+                },
+                {
+                    "resource": "/api/v1/permissions",
+                    "operation": "DELETE",
+                    "description": "allows for deleting a permission",
+                    "active": true
+                },
+                {
+                    "resource": "/api/v1/movies",
+                    "operation": "POST",
+                    "description": "allows for creating a movie",
+                    "active": true
+                },
+                {
+                    "resource": "/api/v1/movies/{extlID}",
+                    "operation": "PUT",
+                    "description": "allows for updating a movie",
+                    "active": true
+                },
+                {
+                    "resource": "/api/v1/movies/{extlID}",
+                    "operation": "DELETE",
+                    "description": "allows for deleting a movie",
+                    "active": true
+                },
+                {
+                    "resource": "/api/v1/movies/{extlID}",
+                    "operation": "GET",
+                    "description": "allows for finding a unique movie",
+                    "active": true
+                },
+                {
+                    "resource": "/api/v1/movies",
+                    "operation": "GET",
+                    "description": "allows for finding all movies",
+                    "active": true
+                }
+            ]
+        },
+        {
+            "role_cd": "movieAdmin",
+            "role_description": "Users can create, update, delete and read the movie database",
+            "active": true,
+            "permissions": [
+                {
+                    "resource": "/api/v1/movies",
+                    "operation": "POST",
+                    "description": "allows for creating a movie",
+                    "active": true
+                },
+                {
+                    "resource": "/api/v1/movies/{extlID}",
+                    "operation": "PUT",
+                    "description": "allows for updating a movie",
+                    "active": true
+                },
+                {
+                    "resource": "/api/v1/movies/{extlID}",
+                    "operation": "DELETE",
+                    "description": "allows for deleting a movie",
+                    "active": true
+                },
+                {
+                    "resource": "/api/v1/movies/{extlID}",
+                    "operation": "GET",
+                    "description": "allows for finding a unique movie",
+                    "active": true
+                },
+                {
+                    "resource": "/api/v1/movies",
+                    "operation": "GET",
+                    "description": "allows for finding all movies",
+                    "active": true
+                }
+            ]
+        }
+    ]
+}
